@@ -1,0 +1,88 @@
+{
+    "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+    "name": "security-antipatterns-python",
+    "version": "1.0.0",
+    "description": "Code generation guard for Python web applications - prevents OWASP Top 10 vulnerabilities in Django, Flask, FastAPI. Covers injection, deserialization, XSS, authentication, and framework-specific security patterns.",
+    "author": "Subhash Dasyam",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/subhashdasyam/security-antipatterns-python"
+    },
+    "keywords": [
+        "security",
+        "python",
+        "django",
+        "flask",
+        "fastapi",
+        "owasp",
+        "injection",
+        "deserialization",
+        "authentication",
+        "code-review"
+    ],
+    "skills": [
+        {
+            "name": "security-antipatterns-python",
+            "source": "./SKILL.md",
+            "description": "Security anti-patterns guard for Python/Django/Flask/FastAPI applications"
+        }
+    ],
+    "resources": [
+        {
+            "name": "injection",
+            "source": "./injection.md",
+            "description": "SQL, Command, Template, LDAP injection patterns (CWE-89, CWE-78)"
+        },
+        {
+            "name": "deserialization",
+            "source": "./deserialization.md",
+            "description": "pickle, yaml, marshal deserialization vulnerabilities (CWE-502)"
+        },
+        {
+            "name": "xss-output",
+            "source": "./xss-output.md",
+            "description": "XSS and template escaping patterns (CWE-79)"
+        },
+        {
+            "name": "auth-access",
+            "source": "./auth-access.md",
+            "description": "BOLA, BFLA, sessions, JWT authentication patterns"
+        },
+        {
+            "name": "crypto-secrets",
+            "source": "./crypto-secrets.md",
+            "description": "Secrets, hashing, encryption, key derivation"
+        },
+        {
+            "name": "input-validation",
+            "source": "./input-validation.md",
+            "description": "Pydantic validation, forms, file uploads"
+        },
+        {
+            "name": "file-operations",
+            "source": "./file-operations.md",
+            "description": "Path traversal, temporary file handling (CWE-22)"
+        },
+        {
+            "name": "django-security",
+            "source": "./django-security.md",
+            "description": "Django CSRF, settings, ORM security patterns"
+        },
+        {
+            "name": "fastapi-flask",
+            "source": "./fastapi-flask.md",
+            "description": "FastAPI/Flask auth, CORS, validation patterns"
+        },
+        {
+            "name": "dependencies",
+            "source": "./dependencies.md",
+            "description": "pip audit, typosquatting vulnerabilities"
+        },
+        {
+            "name": "python-runtime",
+            "source": "./python-runtime.md",
+            "description": "eval/exec dangers, ReDoS vulnerabilities"
+        }
+    ]
+}
