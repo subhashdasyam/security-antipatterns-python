@@ -31,57 +31,57 @@
     "resources": [
         {
             "name": "injection",
-            "source": "./injection.md",
+            "source": "./references/injection.md",
             "description": "SQL, Command, Template, LDAP injection patterns (CWE-89, CWE-78)"
         },
         {
             "name": "deserialization",
-            "source": "./deserialization.md",
+            "source": "./references/deserialization.md",
             "description": "pickle, yaml, marshal deserialization vulnerabilities (CWE-502)"
         },
         {
             "name": "xss-output",
-            "source": "./xss-output.md",
+            "source": "./references/xss-output.md",
             "description": "XSS and template escaping patterns (CWE-79)"
         },
         {
             "name": "auth-access",
-            "source": "./auth-access.md",
+            "source": "./references/auth-access.md",
             "description": "BOLA, BFLA, sessions, JWT authentication patterns"
         },
         {
             "name": "crypto-secrets",
-            "source": "./crypto-secrets.md",
+            "source": "./references/crypto-secrets.md",
             "description": "Secrets, hashing, encryption, key derivation"
         },
         {
             "name": "input-validation",
-            "source": "./input-validation.md",
+            "source": "./references/input-validation.md",
             "description": "Pydantic validation, forms, file uploads"
         },
         {
             "name": "file-operations",
-            "source": "./file-operations.md",
+            "source": "./references/file-operations.md",
             "description": "Path traversal, temporary file handling (CWE-22)"
         },
         {
             "name": "django-security",
-            "source": "./django-security.md",
+            "source": "./references/django-security.md",
             "description": "Django CSRF, settings, ORM security patterns"
         },
         {
             "name": "fastapi-flask",
-            "source": "./fastapi-flask.md",
+            "source": "./references/fastapi-flask.md",
             "description": "FastAPI/Flask auth, CORS, validation patterns"
         },
         {
             "name": "dependencies",
-            "source": "./dependencies.md",
+            "source": "./references/dependencies.md",
             "description": "pip audit, typosquatting vulnerabilities"
         },
         {
             "name": "python-runtime",
-            "source": "./python-runtime.md",
+            "source": "./references/python-runtime.md",
             "description": "eval/exec dangers, ReDoS vulnerabilities"
         }
     ]
