@@ -18,11 +18,13 @@ When you're writing Python web application code, this skill watches for common s
 
 ### Claude Code
 
+Clone to your personal skills directory:
+
 ```bash
-claude mcp add-skill https://github.com/subhashdasyam/security-antipatterns-python
+git clone https://github.com/subhashdasyam/security-antipatterns-python ~/.claude/skills/security-antipatterns-python
 ```
 
-Or add it manually to your settings.
+For project-specific use, clone to `.claude/skills/` in your repo instead.
 
 ### Other platforms
 
