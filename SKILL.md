@@ -42,38 +42,38 @@ Activate when generating code that:
 
 | Module | Focus | Key Vulnerabilities |
 |--------|-------|---------------------|
-| [{baseDir}/references/injection.md]({baseDir}/references/injection.md) | SQL, Command, Template, LDAP | CWE-89, CWE-78, CWE-90, CWE-1336 |
-| [{baseDir}/references/deserialization.md]({baseDir}/references/deserialization.md) | pickle, yaml, marshal | CWE-502 |
-| [{baseDir}/references/xss-output.md]({baseDir}/references/xss-output.md) | XSS, template escaping | CWE-79 |
-| [{baseDir}/references/auth-access.md]({baseDir}/references/auth-access.md) | BOLA, BFLA, sessions | CWE-862, CWE-863, CWE-287 |
-| [{baseDir}/references/crypto-secrets.md]({baseDir}/references/crypto-secrets.md) | Secrets, hashing, encryption | CWE-798, CWE-327, CWE-916 |
-| [{baseDir}/references/input-validation.md]({baseDir}/references/input-validation.md) | Pydantic, forms, uploads | CWE-20, CWE-434, CWE-915 |
-| [{baseDir}/references/file-operations.md]({baseDir}/references/file-operations.md) | Path traversal, temp files | CWE-22, CWE-377 |
-| [{baseDir}/references/django-security.md]({baseDir}/references/django-security.md) | CSRF, settings, ORM | Django-specific |
-| [{baseDir}/references/fastapi-flask.md]({baseDir}/references/fastapi-flask.md) | Auth, CORS, validation | FastAPI/Flask-specific |
-| [{baseDir}/references/dependencies.md]({baseDir}/references/dependencies.md) | pip audit, typosquatting | CWE-1104, CWE-1357 |
-| [{baseDir}/references/python-runtime.md]({baseDir}/references/python-runtime.md) | eval/exec, ReDoS | CWE-94, CWE-1333 |
+| [references/injection.md](references/injection.md) | SQL, Command, Template, LDAP | CWE-89, CWE-78, CWE-90, CWE-1336 |
+| [references/deserialization.md](references/deserialization.md) | pickle, yaml, marshal | CWE-502 |
+| [references/xss-output.md](references/xss-output.md) | XSS, template escaping | CWE-79 |
+| [references/auth-access.md](references/auth-access.md) | BOLA, BFLA, sessions | CWE-862, CWE-863, CWE-287 |
+| [references/crypto-secrets.md](references/crypto-secrets.md) | Secrets, hashing, encryption | CWE-798, CWE-327, CWE-916 |
+| [references/input-validation.md](references/input-validation.md) | Pydantic, forms, uploads | CWE-20, CWE-434, CWE-915 |
+| [references/file-operations.md](references/file-operations.md) | Path traversal, temp files | CWE-22, CWE-377 |
+| [references/django-security.md](references/django-security.md) | CSRF, settings, ORM | Django-specific |
+| [references/fastapi-flask.md](references/fastapi-flask.md) | Auth, CORS, validation | FastAPI/Flask-specific |
+| [references/dependencies.md](references/dependencies.md) | pip audit, typosquatting | CWE-1104, CWE-1357 |
+| [references/python-runtime.md](references/python-runtime.md) | eval/exec, ReDoS | CWE-94, CWE-1333 |
 
 ## Quick Decision Tree
 
 ```
 User input involved?
-├─ Database query → See {baseDir}/references/injection.md (use ORM/parameterized)
-├─ File path → See {baseDir}/references/file-operations.md (use pathlib + resolve check)
-├─ Command execution → See {baseDir}/references/injection.md (subprocess with list args)
-├─ Deserialization → See {baseDir}/references/deserialization.md (NEVER pickle untrusted)
-├─ Template rendering → See {baseDir}/references/xss-output.md (auto-escape enabled)
-└─ API endpoint → See {baseDir}/references/auth-access.md + {baseDir}/references/input-validation.md
+├─ Database query → See references/injection.md (use ORM/parameterized)
+├─ File path → See references/file-operations.md (use pathlib + resolve check)
+├─ Command execution → See references/injection.md (subprocess with list args)
+├─ Deserialization → See references/deserialization.md (NEVER pickle untrusted)
+├─ Template rendering → See references/xss-output.md (auto-escape enabled)
+└─ API endpoint → See references/auth-access.md + references/input-validation.md
 
 Storing/generating secrets?
-├─ API keys → See {baseDir}/references/crypto-secrets.md (env vars)
-├─ Passwords → See {baseDir}/references/crypto-secrets.md (bcrypt/argon2)
-└─ Tokens → See {baseDir}/references/crypto-secrets.md (secrets module)
+├─ API keys → See references/crypto-secrets.md (env vars)
+├─ Passwords → See references/crypto-secrets.md (bcrypt/argon2)
+└─ Tokens → See references/crypto-secrets.md (secrets module)
 
 Framework-specific?
-├─ Django → See {baseDir}/references/django-security.md
-├─ FastAPI → See {baseDir}/references/fastapi-flask.md
-└─ Flask → See {baseDir}/references/fastapi-flask.md
+├─ Django → See references/django-security.md
+├─ FastAPI → See references/fastapi-flask.md
+└─ Flask → See references/fastapi-flask.md
 ```
 
 ## How to Use This Skill
