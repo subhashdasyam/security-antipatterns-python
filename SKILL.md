@@ -3,6 +3,8 @@ name: security-antipatterns-python
 description: Use when generating Python code for web applications, APIs, or handling user input - prevents OWASP Top 10 vulnerabilities in Django, Flask, FastAPI
 version: "1.0.0"
 allowed-tools: "Read"
+metadata:
+  short-description: Prevents OWASP Top 10 vulnerabilities in Python web apps
 ---
 
 # Security Anti-Patterns Guard for Python
